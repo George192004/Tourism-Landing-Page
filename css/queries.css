@@ -1,0 +1,268 @@
+/***********************/
+/* BELOW 1344px (Smaller desktop) */
+/***********************/
+
+@media (max-width: 84em) {
+  .swiper-slide .subtitle {
+    font-size: 6.2rem;
+  }
+
+  .swiper-slide .text {
+    font-size: 1.6rem;
+  }
+
+  .title h2 {
+    font-size: 1.8rem;
+    top: 1.8rem;
+    left: 3.5rem;
+  }
+
+  .cloud-img {
+    height: 7.4rem;
+  }
+
+  .text p {
+    margin-top: 2.4rem;
+  }
+  .container {
+    max-width: 110rem;
+  }
+}
+
+@media (max-width: 79em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .heading-secondary {
+    font-size: 1.6rem;
+  }
+  .service-text {
+    font-size: 1.4rem;
+  }
+
+  .heading-video {
+    font-size: 1.4rem;
+  }
+
+  .heading-text {
+    font-size: 2rem;
+  }
+  .offer-group {
+    margin-bottom: 2.4rem;
+  }
+  .testimonials {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 65em) {
+  .country-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6.4rem;
+    row-gap: 6.4rem;
+    padding: 3rem;
+  }
+  .country-name {
+    font-size: 4.4rem;
+  }
+  .country-price {
+    font-size: 2rem;
+  }
+
+  .right-arrow {
+    font-size: 3.2rem;
+  }
+
+  .right-arrow::before {
+    left: -14px;
+    border-radius: 5rem;
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .trip-content {
+    top: 35%;
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(1, 40rem);
+    justify-content: center;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 48em) {
+  .section-services {
+    padding: 4rem;
+  }
+  .trip-heading {
+    font-size: 3rem;
+  }
+
+  .trip-content {
+    top: -60%;
+  }
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .country-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6.4rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven";
+  }
+
+  .column-one {
+    grid-area: one;
+  }
+
+  .column-two {
+    grid-area: two;
+  }
+
+  .column-three {
+    grid-area: three;
+  }
+
+  .column-four {
+    grid-area: four;
+  }
+
+  .column-five {
+    grid-area: five;
+  }
+
+  .column-six {
+    grid-area: six;
+  }
+
+  .column-seven {
+    grid-area: seven;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    --webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/* For screens between 768px and 1024px */
+@media (min-width: 48em) and (max-width: 64em) {
+  .section-services {
+    padding: 6rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six"
+      "seven seven";
+  }
+
+  .column-one {
+    grid-area: one;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .column-two {
+    grid-area: two;
+  }
+
+  .column-three {
+    grid-area: three;
+  }
+
+  .column-four {
+    grid-area: four;
+  }
+
+  .column-five {
+    grid-area: five;
+  }
+
+  .column-six {
+    grid-area: six;
+  }
+
+  .column-seven {
+    grid-area: seven;
+  }
+}
+
+@media (max-width: 34em) {
+  .sales-header {
+    font-size: 2.4rem;
+  }
+  .sales-text {
+    font-size: 1.6rem;
+  }
+  .sales-input {
+    width: 30rem;
+  }
+}
